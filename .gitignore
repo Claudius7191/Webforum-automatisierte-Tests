@@ -1,0 +1,20 @@
+# Composer
+/vendor/
+
+# Node.js
+/node_modules/
+
+# Playwright
+/playwright-report/
+/test-results/
+/playwright/.cache/
+
+# VS Code
+.vscode/
+
+# Log-Dateien
+*.log
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
