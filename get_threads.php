@@ -1,7 +1,7 @@
 <?php
 require 'db.php';
 
-$stmt = $db->prepare("
+$stmt = $pdo->prepare("
     SELECT t.*, u.username
     FROM thread t
     JOIN user u ON t.created_by = u.user_id

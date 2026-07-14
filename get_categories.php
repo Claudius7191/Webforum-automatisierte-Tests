@@ -1,7 +1,7 @@
 <?php
 require 'db.php';
 
-$stmt = $db->query("
+$stmt = $pdo->query("
     SELECT 
         c.category_id,
         c.name,

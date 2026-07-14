@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test('Kompletter Kaufprozess', async ({ page }) => {
 
     // Login-Seite öffnen
-    await page.goto('http://localhost/Webforum/login.html');
+    await page.goto('/login.html');
 
     // Zugangsdaten eingeben
     await page.fill('input[name="email"]', 'max.mustermann@test.de');

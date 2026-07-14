@@ -8,7 +8,7 @@ if (!isset($_GET['id'])) {
 $thread_id = $_GET['id'];
 
 // Thread laden
-$stmt = $db->prepare("
+$stmt = $pdo->prepare("
     SELECT thread.*, users.username 
     FROM thread
     JOIN users ON thread.created_by = users.user_id
@@ -22,7 +22,7 @@ if (!$thread) {
 }
 
 // Posts laden
-$stmt = $db->prepare("
+$stmt = $pdo->prepare("
     SELECT post.*, users.username 
     FROM post
     JOIN users ON post.created_by = users.user_id

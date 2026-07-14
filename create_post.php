@@ -12,7 +12,7 @@ if (!isset($_POST['thread_id'])) {
 
 $thread_id = $_POST['thread_id'];
 
-$stmt = $db->prepare("
+$stmt = $pdo->prepare("
     INSERT INTO post (content, created_by, thread_id)
     VALUES (?, ?, ?)
 ");
