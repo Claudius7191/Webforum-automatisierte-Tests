@@ -25,7 +25,7 @@ test('Kompletter Kaufprozess', async ({ page }) => {
     await page.locator('button:has-text("In den Warenkorb")').first().click();
 
     // Warenkorb öffnen
-    await page.goto('http://localhost/Webforum/cart.php');
+    await page.goto('/cart.php');
 
     // Kauf abschließen
     await page.locator('#checkout-button').click();
