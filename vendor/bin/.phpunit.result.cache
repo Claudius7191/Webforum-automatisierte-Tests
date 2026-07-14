@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"CartTest::testTotalPrice":0.022,"ProductTest::testProductsExist":0.091,"UserTest::testUsersExist":0.007,"PasswordTest::testPasswordVerification":0.116}}
